@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  </head>
+    <title>Document</title>
+</head>
+
+
+<body>
+
+  <!--
+       ========================================
+       Generic
+       ========================================
+     -->
+     <h1 id="title">Survey Form</h1>
+
+     <div class="card">
+
+     <p id="description">We would like to know a bit more about you!<br> Please take the Survey:</p>
+
+
+     <!--
+       ========================================
+       Input Text
+       ========================================
+     -->
+
+
+      <form id="survey-form" method="post">
+
+        <fieldset>
+
+          <legend class="subheading">Personal information</legend>
+
+         <div class= "info-group">
+           <div class="label">
+          <label for="username" id="name-label" >Your Name</label>
+        </div>
+        <div class="personal-data">
+          <input class="text-input" id="name" type="text" name="username" placeholder="Your full name" autofocus="autofocus">
+        </div>
+           
+        <div class="label">
+          <label for="email-address" id="email-label" class="info" placeholder= "name@domain.com">Your Email address</label>
+        </div>
+        <div class="personal-data">
+          <input id="email"  class="text-input"  type=email name="email-address" required>
+        </div>
+<div class="label">
+          <label for="age" id="name-label" class="info" placeholder="29" min="1" max="99">Your age</label>
+      </div>
+      <div class="personal-data" >
+          <input id="number"  class="text-input" type="number" name="age" required>
+          </div>
+        </div>
+ ´
+        </fieldset>
+
+
+    <!--
+       ========================================
+      form Controls
+       ========================================
+     -->
+
+
+
+        <fieldset>
+          <legend class="subheading">What's more about you</legend>
+          <div class= " info-group info-group-2">
+          <div class="info">
+          <h3>Morning-habits</h3>
+        </div>
+        <div class= "content">
+           <select  class="text-input" id="dropdown" name="habits">
+            <div><option value="coffee" selected>Making coffee</option></div>
+            <div><option value="teeth">Brush my teeth</option></div>
+            <div><option value="flowers">Water the flowers</option></div>
+           </select>
+        </div>
+         
+        <div class="info">  
+          <h3>Work</h3>
+        </div>
+          <div class="content">
+              <div><label><input id="radiobuttons" type="radio" name="type-of-work" value="self-employed" checked>self-employed</label></div>
+                <div><label><input id="radiobuttons" type="radio" name="type-of-work" value="full-time">full-time</label></div>
+                  <div><label><input id="radiobuttons" type="radio" name="type-of-work" value="none">None of the above</label></div>
+          </div>
+
+      <div class="info">  
+        <h3>Your Hobbies</h3>
+      </div> 
+      <div class="content"> 
+            <div><label><input id="checkbox" type="checkbox" name="Hobbies" value="reading">Reading</label></div>
+            <div><label><input id="checkbox" type="checkbox" name="Hobbies" value="swimming">Swimming</label></div>
+            <div><label><input id="checkbox" type="checkbox" name="Hobbies" value="dancing">Dancing</label></div>
+            <div><label><input id="checkbox" type="checkbox" name="Hobbies" value="knitting">Knitting</label></div>
+            <div><label><input id="checkbox" type="checkbox" name="Hobbies" value="other">Other</label></div>
+      </div>
+    </div>
+        </fieldset>
+
+
+
+  <!--
+       ========================================
+      Textarea
+       ========================================
+     -->
+
+
+          <div class="subheading">Tell us more</div>
+
+          <textarea id="textarea" name="textarea">Write three fun facts about you here</textarea>
+
+          <button  id="submit" name="submit">Submit</button>
+
+   </form>
+</div>
+
+
+</body>
+</html>
