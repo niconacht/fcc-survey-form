@@ -55,7 +55,7 @@ Generic
 */
 
 body {
-  background: url("../images/background.jpg") violet repeat right;
+  background: url("./fcc-survey-form/images/background.jpg") violet repeat right;
   background-size: 150%;
   color: #FFFFFF;
 
