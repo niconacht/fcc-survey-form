@@ -55,7 +55,7 @@ Generic
 */
 
 body {
-  background: url("https://github.com/niconacht/fcc-survey-form/blob/master/images/background.jpg?raw=true") violet repeat right;
+  background: url("../images/background.jpg") violet repeat right;
   background-size: 150%;
   color: #FFFFFF;
 
